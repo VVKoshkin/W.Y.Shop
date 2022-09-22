@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- aka. 1st screen -->
+    <header class="header gradient">
+        <div class="container">
+            <nav class="navbar" id="mainNav">
+                <a class="navbar-brand col-xl-1 logo" href="#">
+                    <img src="img/Logo.png" alt="W.Y.Corp">
+                </a>
+
+                <nav class="navbar col-xl-5" id="offCanvasPart">
+                    <button class="navbar-toggler offcanvas-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        <label class="navbar-text ms-3 typeset">Линейка товаров и услуг</label>
+                    </button>
+                    <div class="offcanvas offcanvas-end gradient" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title headlines" id="offcanvasNavbarLabel">Линейка товаров и услуг
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Lorem.</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Quia.</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Fugit.</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Earum!</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Sit.</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Atque?</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Labore!</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Reiciendis!</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Officiis.</a></li>
+                                <li class="nav-item  typeset"><a href="#" class="nav-link">Velit.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <nav class="navbar navbar-expand-xl">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#headerCollapseContent" aria-controls="headerCollapseContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse" id="headerCollapseContent">
+                        <ul class="navbar-nav" id="commonTogglerPart">
+                            <li class="nav-item"><a href="" class="nav-link typeset">Перспективные планеты</a></li>
+                            <li class="nav-item"><a href="" class="nav-link typeset">Исследования ксеноморфов</a></li>
+                            <li class="nav-item"><a href="" class="nav-link typeset">Плазмоганы</a></li>
+                        </ul>
+                </nav>
+                <a class="navbar-brand basket" href="#">
+                    <img src="img/basket.svg" alt="basket" width="24px" height="24px"
+                        class="d-inline-block align-text-top">
+                    <span class="basket-size typeset">0</span>
+                </a>
+            </nav>
+            <div class="first-screen row align-items-center">
+                <div class="col-xl-6">
+                    <h3 class="headlines mb-30">Weyland-Yutani<br>Corporation</h3>
+                    <p class="typeset mb-50">Building Better Worlds</p>
+                    <input type="button" value="Выбрать себе звездолёт" class="any-button header-button">
+                </div>
+                <div class="col-xl-6 d-flex justify-content-around header-images">
+                    <img src="img/head_img1.jpg" alt="" class="header-image">
+                    <img src="img/head_img2.jpg" alt="" class="header-image">
+                    <div class="play-section">
+                        <input type="button" value="" class="any-button play-section__button">
+                        <p class="play-section__text typeset">Презентация <br>
+                            корпорации <br>
+                            W.Y.</p>
+                        <img src="img/play_arrow.svg" alt="" class="play-section__arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+    <main class="main">
+        <section class="fines mb-50">
+            <div class="container">
+                <div class="row">
+                    <h3 class="headlines mb-40 col-11">Популярные товары</h3>
+                    <div class="col">
+                        <input type="button" class="reverse180 blue-arrow highres">
+                        <input type="button" class="blue-arrow highres">
+                    </div>
+                </div>
+                <div class="row mb-30">
+                    <div class="col-sm-4">
+                        <div class="fine-elem">
+                            <img src="img/fine1.jpg" alt="" class="fine-elem__img d-block mb-50">
+                            <div class="d-flex justify-content-between">
+                                <div class="col-lg-8">
+                                    <h3 class="headlines fine-elem__headline">Винтовка М41А</h3>
+                                    <p class="typeset">Увеличенный магазин и подствольный гранатомёт</p>
+                                </div>
+                                <div>
+                                    <input type="button" class="any-button fine-elem__btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="fine-elem">
+                            <img src="img/fine2.jpg" alt="" class="fine-elem__img d-block mb-50">
+                            <div class="d-flex justify-content-between">
+                                <div class="col-lg-8">
+                                    <h3 class="headlines fine-elem__headline">Билет на LV426</h3>
+                                    <p class="typeset">Перспективная колония,
+                                        всего 21654 св. лет от Земли</p>
+                                </div>
+                                <div>
+                                    <input type="button" class="any-button fine-elem__btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="fine-elem">
+                            <img src="img/fine3.jpg" alt="" class="fine-elem__img d-block mb-50">
+                            <div class="d-flex justify-content-between">
+                                <div class="col-lg-8">
+                                    <h3 class="headlines fine-elem__headline">Яйцо ксеноморфа</h3>
+                                    <p class="typeset">Живой фейсхаггер внутри
+                                        Носитель приобретается отдельно</p>
+                                </div>
+                                <div>
+                                    <input type="button" class="any-button fine-elem__btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center slider-control">
+                    <input type="button" class="reverse180 blue-arrow lowres">
+                    <div class="slider-square slider-selected"></div>
+                    <div class="slider-square"></div>
+                    <div class="slider-square"></div>
+                    <div class="slider-square"></div>
+                    <input type="button" class="blue-arrow lowres">
+                </div>
+            </div>
+        </section>
+
+        <section class="make-claim mb-30 gradient">
+            <div class="container">
+                <h1 class="headlines mb-40">Оформить заявку на колонизацию Андромеды</h1>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-sm form_elem">
+                            <select class="form-control form_input">
+                                <option class="form_select__elem">Выбрать планету</option>
+                                <option class="form_select__elem">SKD-SWDKS-234</option>
+                                <option class="form_select__elem">LV-426</option>
+                                <option class="form_select__elem">ALWP-744</option>
+                            </select>
+                        </div>
+                        <div class="col-sm form_elem">
+                            <input type="text" class="form-control form_input" name="name" id="" placeholder="Ваше имя">
+                        </div>
+                        <div class="col-sm form_elem">
+                            <input type="tel" class="form_input form-control" name="phone" id=""
+                                placeholder="Ваш телефон">
+                        </div>
+                        <div class="col-sm form_elem">
+                            <input type="submit" value="Подать заявку" class="form-control any-button form_submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="footer-txt highres">W.Y. Corp.<br>
+                    Все права защищены, 2012</p>
+                <img src="img/Logo.png" alt="">
+                <div>
+                    <p class="footer-txt">Мы на связи с вами</p>
+                    <p class="footer-txt footer-tel">+7 (977) 443 73 83</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
